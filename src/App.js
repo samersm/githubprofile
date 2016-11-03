@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 var $ = require('jquery');
 import Profile from './github/Profile.jsx';
+<<<<<<< HEAD
 import Search from './github/Search.jsx';
 
+=======
+>>>>>>> 03bf968e605ed74e1bd19affccc9357cc5f2f175
 
 class App extends Component {
   constructor(props) {
@@ -48,6 +51,7 @@ class App extends Component {
     });
   }
   
+<<<<<<< HEAD
   handleFormSubmit(username) {
     this.setState({username: username}, function() {
       this.getUserData();
@@ -55,6 +59,8 @@ class App extends Component {
     });
   }
   
+=======
+>>>>>>> 03bf968e605ed74e1bd19affccc9357cc5f2f175
   componentDidMount() {
     this.getUserData();
     this.getUserRepos();
@@ -64,7 +70,10 @@ class App extends Component {
     return (
       
       <div>
+<<<<<<< HEAD
         <Search onFormSubmit={this.handleFormSubmit.bind(this)} />
+=======
+>>>>>>> 03bf968e605ed74e1bd19affccc9357cc5f2f175
         <Profile {...this.state} />
       </div>
       
