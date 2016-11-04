@@ -8,8 +8,8 @@ class Repo extends Component {
     return (
         <div>
         <ul id="list1" className="list-group-item">
-                <a className="list-group" href={repo.html_url}>
-                    {repo.name} : {repo.description}
+                <a className="list-group" target="_blank" href={repo.html_url}>
+                    {repo.name} :<bold id="des1"> {repo.description}</bold>
                 </a>
         </ul>
         </div>
